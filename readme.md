@@ -60,7 +60,7 @@ This is a demo implementation not designed for any kind of production use
       logoutRoutes: ['/session/logout'],
       loginRedirectRoute: '/profile',
       api: {
-        host: 'localhost',
+        host: 'idm55-api-host',
         port: '8080',
         protocol: 'http',
         username: 'anonymous',
