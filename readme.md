@@ -8,7 +8,7 @@ This is a demo implementation not designed for any kind of production use
 
 * Registration and authentication against **F**orge**R**ock **ID**M 5.5 **A**PI
 * Relies on presence of persistent server-side `req.session`, e.g. delivered by [express-session](https://www.npmjs.com/package/express-session)
-* utilizes `express.urlencoded` middleware
+* Utilizes `express.urlencoded` middleware
 
 ## Installation
 
@@ -16,18 +16,17 @@ This is a demo implementation not designed for any kind of production use
 
 ## Options
 
-* `[loginFreeRoutes]` not requiring login
+* `[loginFreeRoutes]` URL(s) not requiring login
 * `[loginRoutes]` login form(s)
 * `[registrationRoutes]` registration form(s)
 * `[logoutRoutes]` logging out URL(s)
-* `[loginRedirectRoute]` URL to open after logging in
+* `[loginRedirectRoute]` URL to redirect to after logging in
 * `{api}` API instance particularities:
-  * `host` hostname, e.g. 'localhost'
-  * `port` port, e.g. '8080'
+  * `host` hostname
+  * `port` port
   * `protocol` 'http' is the only supported one at the moment
-  * `username` the anonymous user, e.g. 'anonymous',
-  * `password` the user's password, e.g. 'anonymous'
-}
+  * `username` the anonymous user
+  * `password` the user's password
 
 ## Example
     const session = require('express-session')
@@ -77,7 +76,7 @@ Successful registration or/and login will attach `user`, `profile`, and `session
 
 In certain cases `message` string will be attached to the session, i.e. `req.session.frida.message`
 
-The above can be used in building client interface, e.g. employing templaiting engine.
+The above can be used in building client interface, optionally employing templating engine
 
 ## License
 
