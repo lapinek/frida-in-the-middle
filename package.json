@@ -2,6 +2,12 @@
   "name": "frida-in-the-middle",
   "version": "0.1.0",
   "description": "Node/Express middleware for registration and authentication against ForgeRock IDM 5.5 API",
+  "keywords": [
+    "middleware",
+    "ForgeRock",
+    "Identity Management",
+    "IDM"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "node index.test.js"
