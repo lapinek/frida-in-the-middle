@@ -9,5 +9,9 @@
   "author": "Ko La <lapinek@gmail.com>",
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lapinek/frida-in-the-middle.git"
+  }
 }
