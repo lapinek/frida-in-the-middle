@@ -8,7 +8,7 @@ This is a demo implementation not designed for any kind of production use
 
 * Registration and authentication against **F**orge**R**ock **ID**M 5.5 **A**PI
 * Relies on presence of persistent server-side `req.session`, e.g. delivered by [express-session](https://www.npmjs.com/package/express-session)
-* Utilizes `express.urlencoded` middleware
+* Relies on presence of parsed `body` attached to the `request` object, e.g. with use of `express.urlencoded` middleware
 
 ## Installation
 
